@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    /* Primary */
+    --dark-cyan: hsla(162, 59%, 33%, 0.842);
+    --cyan: hsla(179, 45%, 43%, 0.849);
+    --bright-yellow:hsl(71, 62%, 43%);
+
+    /* Neutral */
+    --light-gray: hsl(204, 43%, 93%);
+    --gray-blue: hsl(218, 22%, 67%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background: var(--gray-blue);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 23.438rem;
+    width: 20rem;
+    margin: auto;
+    border-radius:.3rem;
+    overflow: hidden; /* To show the curve shape on edges */
+    -webkit-box-shadow: 1px 2px 12px 0px #000000; 
+    box-shadow: 1px 2px 12px 0px #000000;
+}
+
+/* Join Us Community Box */
+.join-us {
+    background: var(--light-gray);
+    padding: 2rem 2rem;
+    color: var(--gray-blue);
+
+}
+
+.join-title {
+    padding-bottom: 1rem;
+    color: var(--cyan);
+}
+
+.highlight {
+    color: var(--bright-yellow);
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.desc {
+    text-align: justify;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+/* End Join Us */
+
+/* Monthly Sub */
+.monthly-sub {
+    background: var(--dark-cyan);
+    color: var(--light-gray);
+    padding: 2rem;
+}
+
+.monthly-title {
+    padding-bottom: 1rem;
+}
+
+.per-month {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: var(--gray-blue);
+    padding-bottom: 1rem;
+}
+.price {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--light-gray);
+    margin-right: 1rem;
+}
+.price-desc {
+    padding-bottom: 2rem;
+}
+
+.signup {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: var(--bright-yellow);
+    color: #fff;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: .30rem;
+    -webkit-box-shadow: 0px 13px 19px -9px rgba(109, 109, 109, 0.55); 
+    box-shadow: 0px 13px 19px -9px rgba(36, 36, 36, 0.55);
+}
+
+.signup:hover {
+    background:hsl(71, 63%, 39%);
+}
+/* End Monthly Sub */
+
+/* Why Us */
+.why-us {
+    background: var(--cyan);
+    color: var(--light-gray);
+    padding: 2rem;
+
+}
+.why-title {
+    padding-bottom: .5rem;
+}
+.why-us ul {
+    padding: 1rem 0;
+}
+
+.why-us ul li {
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 1.5;
+}
+footer {
+   margin: 2rem 0;
+}
+/* Media Query */
+
+@media (min-width: 900px) {
+
+    .container {
+        max-width: 90rem;
+        width: 45rem;
+        margin: auto;
+    }
+
+   .flex{
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .flex > * {
+       flex: 1 1 50%;
+   }
+}
