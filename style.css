@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 :root {
     /* Primary */
-    --dark-cyan: hsla(162, 59%, 33%, 0.842);
-    --cyan: hsla(179, 45%, 43%, 0.849);
+    --dark-cyan: 	hsl(179, 61%, 44%);
+    --cyan: hsl(179, 45%, 43%, 0.849);
     --bright-yellow:hsl(71, 62%, 43%);
 
     /* Neutral */
-    --light-gray: hsl(204, 43%, 93%);
+    --light-gray: 	hsl(206, 47%, 93%);
     --gray-blue: hsl(218, 22%, 67%);
 }
 
@@ -21,7 +21,7 @@
 body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
-    background: var(--gray-blue);
+    background: var(--light-gray);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -87,7 +87,7 @@ li {
     display: flex;
     align-items: center;
     font-weight: 400;
-    color: var(--gray-blue);
+    color: var(--light-gray);
     padding-bottom: 1rem;
 }
 .price {
